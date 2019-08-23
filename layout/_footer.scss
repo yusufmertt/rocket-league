@@ -1,0 +1,38 @@
+.footer{
+    background-color: rgb(158, 158, 158);
+    &__logo-box{
+        text-align: center;
+        padding: 2rem 2rem;
+    }
+    &__logo{
+        width: 13rem;
+    }
+    &__navigation{
+        padding: 1rem 1rem;
+    }
+    &__list{
+    
+        list-style-type: none;
+    }
+    &__item{
+        padding: .5rem;
+        font-size: 1.4rem;
+        display: inline-block;
+
+    }
+    &__link{
+        transition: all .3s ;
+        text-decoration: none;
+        color: rgb(51, 51, 51);
+        &:hover{
+            color: rgb(12, 12, 12)
+        }
+
+    }
+    &__copyright{
+        padding: 1rem 1rem;
+        font-size: 1.15rem;
+        letter-spacing: .05rem;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,35 @@
+.header{
+    &__logo-box{
+        position: relative;
+    }
+    &__logo{
+        width:15%;
+        position: absolute;
+        top: 6rem;
+        left: 10rem;
+    }
+    &__nav{
+        position: relative;
+        &--items{
+            position: absolute;
+            font-size: 1.6rem;
+            top: 6rem;
+            right: 6rem;
+            list-style: none;
+            
+        }
+        &--link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #DADADA;
+            letter-spacing: .3rem;
+            &:not(:first-child){
+                padding-left: 4rem;
+            }
+            transition: all .3s;
+            &:hover{
+                color: #76F4F4;
+            }
+        }
+    }
+}

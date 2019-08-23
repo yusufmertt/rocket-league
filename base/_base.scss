@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before{
+    margin : 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+};
+
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    background-color: rgb(236, 236, 236);
+    padding: .6rem 1.5rem;
+}

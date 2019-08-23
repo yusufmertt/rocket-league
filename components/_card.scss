@@ -1,0 +1,125 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    margin: 0 1rem;
+    margin-bottom: -4rem;
+    padding: 3rem 1rem;
+    position: relative;
+    
+    
+
+    &__side{
+        height: 28rem;
+        padding: 2.2rem;
+        transition: all .8s;
+        backface-visibility: hidden;
+        border-radius: 7px;
+        
+        &--front{
+            background-image: linear-gradient(to right, rgba(94, 94, 94, 0.8), rgba(160, 160, 160, 0.8));
+        }
+        &--back{
+            transform: rotateY(180deg);
+            background-color: rgb(145, 145, 145);
+        }
+    }
+    &__pic-box{
+        margin-left: -1rem;
+        text-align: center;
+    }
+    
+    &__pic{
+        width: 14rem;
+        border-radius: 50%;
+        position: relative;
+    }
+    &__link{
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        color: black;
+        background-color: white;
+        border-radius: 3px;
+        padding: 1.2rem 2.5rem;
+        transition: all .4s;
+        
+        &-yt{
+            
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(223, 11, 11) 50%);
+        background-size: 280%;
+            &:hover{
+                background-position: 100%;
+            }
+        }
+        &-stats{
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(100, 100, 100) 50%);
+            background-size: 280%;
+            padding: 1.2rem 3.9rem;
+
+            &:hover{
+                background-position: 100%;
+            }
+        }
+        &-twitch{
+            
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(128, 11, 223) 50%);
+            background-size: 280%;
+            padding: 1.2rem 3.2rem;
+
+            &:hover{
+                background-position: 100%;
+            }
+        }
+
+        &-li{
+
+            padding: 2rem 2rem;
+        }
+    }
+    &__link-box{
+        margin-left: 1rem;
+
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-60%,-60%);
+    }   
+    &__link-list{
+        list-style-type: none;
+        
+    }
+    &__player-team{
+        margin: 3rem 0;
+        text-align: center;
+    
+    }
+    &__player-team--ico{
+        width: 10rem;
+        height: 7rem;
+        position: relative;
+    }
+    &__player-name{
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+    }
+    
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    
+    &:hover &__side--back{
+        transform: rotateY(0deg);
+    }
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        text-align: center;
+    }
+    
+}
