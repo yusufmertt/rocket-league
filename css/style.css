@@ -14,6 +14,7 @@ html {
   font-weight: 300;
   background-color: #ececec;
   padding: .6rem 1.5rem;
+  scroll-behavior: smooth;
 }
 
 .header__logo-box {
